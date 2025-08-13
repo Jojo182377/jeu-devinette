@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Devinette</title>
+    <link rel="stylesheet" href="GAME.CSS">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎯 Jeu de Devinette</h1>
+        <div id="game">
+            <div id="question"></div>
+            <div id="answers"></div>
+        </div>
+
+        <div id="score-section" class="hidden">
+            <h2>🏆 Ton score final : <span id="final-score"></span></h2>
+            <div class="share-buttons">
+                <button onclick="shareWhatsApp()">📲 Partager sur WhatsApp</button>
+                <button onclick="shareFacebook()">📘 Partager sur Facebook</button>
+            </div>
+            <button onclick="restartGame()">🔄 Rejouer</button>
+        </div>
+    </div>
+
+    <script src="GAME.JS"></script>
+</body>
+</html>
